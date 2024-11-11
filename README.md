@@ -6,8 +6,13 @@ curl -fsL christianherrera.com.ar/settings/...
 # Conf. Disponibles
 
 ## Visual Studio Code
-- [Chris (Minimal)](VSCode/Minimal.code-profile)
-- [Chris (MatLab)](VSCode/MatLab.code-profile)
+
+| Archivo                                        | Link                                                                     |
+|------------------------------------------------|--------------------------------------------------------------------------|
+| [Chris (Minimal)](VSCode/Minimal.code-profile) | `curl -fsL christianherrera.com.ar/settings/VSCode/Minimal.code-profile` |
+| [Chris (MatLab)](VSCode/MatLab.code-profile)   | `curl -fsL christianherrera.com.ar/settings/VSCode/Minimal.code-profile` |
+
+
 
 
 ## Conexiones SSH
@@ -15,33 +20,41 @@ Requisito: [Yubico PIV Tool](https://developers.yubico.com/yubico-piv-tool/Relea
 
 Ubicacion: `~/.ssh/config`
 
-- [ssh.gpg](SSH/ssh.gpg)
-- [ssh.gpg.asc (sign)](SSH/ssh.gpg.asc)
+Desencriptar con: `gpg -d ssh.gpg`
+
+| Archivo                               | Link                                                         |
+|---------------------------------------|--------------------------------------------------------------|
+| [ssh.gpg](SSH/ssh.gpg)                | `curl -fsL christianherrera.com.ar/settings/SSH/ssh.gpg`     |
+| [ssh.gpg.asc (sign)](SSH/ssh.gpg.asc) | `curl -fsL christianherrera.com.ar/settings/SSH/ssh.gpg.asc` |
 
 
 ## GnuPG
 Ubicacion: `%APPDATA%/gnupg/gpg.conf` o `~/.gnupg/gpg.conf`
 
-Desencriptar con: `gpg -d ssh.gpg`
+| Archivo                         | Link                                                        |
+|---------------------------------|-------------------------------------------------------------|
+| [gpg.conf](GnuPG/gpg.conf)      | `curl -fsL christianherrera.com.ar/settings/GnuPG/gpg.conf` |
+| [scdaemon](GnuPG/scdaemon.conf) | `curl -fsL christianherrera.com.ar/settings/GnuPG/scdaemon.conf` |
 
-- [gpg.conf](GnuPG/gpg.conf)
-- [scdaemon](GnuPG/scdaemon.conf)
 
 ## PowerShell
 Editar con: `code $PROFILE`
 
-- [profile.ps1](PowerShell/profile.ps1)
+| Archivo                               | Link                                                                |
+|---------------------------------------|---------------------------------------------------------------------|
+| [profile.ps1](PowerShell/profile.ps1) | `curl -fsL christianherrera.com.ar/settings/PowerShell/profile.ps1` |
 
 
 ## GitHub
+Requisito: [Git](https://git-scm.com/downloads)
+
 Ubicacion: `~/.gitconfig`
 
-- [gitconfig.conf](GitHub/gitconfig.gpg)
-- [gitconfig.gpg.asc (sign)](GitHub/gitconfig.gpg.asc)
+Desencriptar con: `gpg -d gitconfig.gpg`
 
-> [!TIP]
-> Lar rutas para los parametros `sshCommand` y `program` se pueden obtener con:
-> ```
-> (Get-Command <command>).path
-> which <command>
-> ```
+| Archivo                                              | Link                                                                  |
+|------------------------------------------------------|-----------------------------------------------------------------------|
+| [gitconfig.conf](GitHub/gitconfig.gpg)               | `curl -fsL christianherrera.com.ar/settings/GitHub/gitconfig.gpg`     |
+| [gitconfig.gpg.asc (sign)](GitHub/gitconfig.gpg.asc) | `curl -fsL christianherrera.com.ar/settings/GitHub/gitconfig.gpg.asc` |
+
+---
