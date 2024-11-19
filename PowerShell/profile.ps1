@@ -1,3 +1,10 @@
+#===========> Oh-My-Posh <===========
+# Buscar el path con: `(Get-Command oh-my-posh).Source`
+$path_ohmyposh = "C:\Users\<usuario>\AppData\Local\Programs\oh-my-posh"
+(@(& "$path_ohmyposh\bin\oh-my-posh.exe" init pwsh --config="$path_ohmyposh\themes\clean-detailed.omp.json" --print) -join "`n") | Invoke-Expression
+Import-Module Terminal-Icons
+
+
 # KeyID de las subclaves de la llave cargada en la YubiKey
 $ringID = "87F44023A98DE42AF19274E8AD175429B6768C5C"
 $encID = "B4BC47F5B1DCA524"

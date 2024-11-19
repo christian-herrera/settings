@@ -40,9 +40,12 @@ Ubicacion: `%APPDATA%/gnupg/gpg.conf` o `~/.gnupg/gpg.conf`
 ## PowerShell
 Editar con: `code $PROFILE`
 
-| Archivo                               | Link                                                                |
-|---------------------------------------|---------------------------------------------------------------------|
-| [profile.ps1](PowerShell/profile.ps1) | `curl -fsL christianherrera.com.ar/settings/PowerShell/profile.ps1` |
+Opcional: [Oh-My-Posh](https://ohmyposh.dev/)
+
+| Archivo                                    | Link                                                                |
+| ------------------------------------------ | ------------------------------------------------------------------- |
+| [profile.ps1](PowerShell/profile.ps1)      | `curl -fsL christianherrera.com.ar/settings/PowerShell/profile.ps1` |
+| [Color Scheme - Snazzy](PowerShell/snazzy) | `curl -fsL christianherrera.com.ar/settings/PowerShell/snazzy`      |
 
 
 ## GitHub
